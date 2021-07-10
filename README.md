@@ -66,15 +66,15 @@ So it is not necessary to add the textarea element twice, if you don't need it:
 </template>
 
 <script>
-	export default {
+export default {
 
-		data() {
-			return {
-				grow: true,
-			};
-		},
+	data() {
+		return {
+			grow: true,
+		};
+	},
 
-	};
+};
 </script>
 ```
 
@@ -94,14 +94,14 @@ Instead of:
 </template>
 
 <script>
-	export default {
+export default {
 
-		data() {
-			return {
-				grow: true,
-			};
-		},
+	data() {
+		return {
+			grow: true,
+		};
+	},
 
-	};
+};
 </script>
 ```
