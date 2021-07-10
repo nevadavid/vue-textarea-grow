@@ -78,7 +78,7 @@ export default {
 </script>
 ```
 
-Instead of:
+Instead:
 
 ```html
 <template>
