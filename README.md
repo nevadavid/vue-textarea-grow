@@ -56,11 +56,11 @@ So it is not necessary to add the textarea element twice, if you don't need it:
     ></textarea>
 
     <textarea
-	  v-else
+      v-else
     ></textarea>
 
     <button
-	  @click="grow = false"
+      @click="grow = false"
     ></button>
 </div>
 </template>
