@@ -1,0 +1,14 @@
+{
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"serve": "vite preview"
+	},
+	"devDependencies": {
+		"typescript": "^4.3.5",
+		"vite": "^2.4.0",
+		"vite-plugin-vue2": "^1.7.2",
+		"vue": "^2.6.14"
+	}
+}
