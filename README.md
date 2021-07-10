@@ -15,9 +15,9 @@ import grow from 'vue-textarea-grow';
 
 export default {
 
-	directives: {
-		grow,
-	},
+  directives: {
+    grow,
+  },
 
 };
 ```
@@ -28,8 +28,8 @@ export default {
 import grow from 'vue-textarea-grow';
 
 Vue.directive(
-	'grow',
-	grow,
+  'grow',
+  grow,
 );
 ```
 
@@ -38,7 +38,7 @@ Vue.directive(
 
 ```html
 <textarea
-	v-grow
+  v-grow
 ></textarea>
 ```
 
@@ -50,29 +50,29 @@ So it is not necessary to add the textarea element twice, if you don't need it:
 
 ```html
 <template>
-	<div>
-		<textarea
-			v-if="grow"
-		></textarea>
+  <div>
+    <textarea
+      v-if="grow"
+    ></textarea>
 
-		<textarea
-			v-else
-		></textarea>
+    <textarea
+	  v-else
+    ></textarea>
 
-		<button
-			@click="grow = false"
-		></button>
-	</div>
+    <button
+	  @click="grow = false"
+    ></button>
+</div>
 </template>
 
 <script>
 export default {
 
-	data() {
-		return {
-			grow: true,
-		};
-	},
+  data() {
+    return {
+      grow: true,
+    };
+  },
 
 };
 </script>
@@ -82,25 +82,25 @@ Instead of:
 
 ```html
 <template>
-	<div>
-		<textarea
-			v-grow="grow"
-		></textarea>
+  <div>
+    <textarea
+      v-grow="grow"
+    ></textarea>
 
-		<button
-			@click="grow = false"
-		></button>
-	</div>
+    <button
+      @click="grow = false"
+    ></button>
+  </div>
 </template>
 
 <script>
 export default {
 
-	data() {
-		return {
-			grow: true,
-		};
-	},
+  data() {
+    return {
+      grow: true,
+    };
+  },
 
 };
 </script>
