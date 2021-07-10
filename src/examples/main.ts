@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import { grow } from './grow';
+import { grow } from '../grow';
 
 new Vue(
 	{

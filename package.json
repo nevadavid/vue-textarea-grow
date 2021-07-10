@@ -1,8 +1,26 @@
 {
+	"name": "vue-textarea-grow",
 	"version": "1.0.0",
+	"description": "Vue directive that handles textarea autogrow.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nevadavid/vue-textarea-grow.git"
+	},
+	"author": "David Uri",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nevadavid/vue-textarea-grow/issues"
+	},
+	"homepage": "https://github.com/nevadavid/vue-textarea-grow#readme",
+	"files": [
+		"dist/**/*"
+	],
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build",
+		"build": "tsc",
+		"vite": "vite build",
 		"serve": "vite preview"
 	},
 	"devDependencies": {

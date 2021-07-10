@@ -10,6 +10,9 @@ function input(el: HTMLElement) {
 	el.style.height = height + 'px';
 }
 
+/**
+ * Vue directive for handling textarea autogrow (automatically adjustable height).
+ */
 export const grow = {
 	bind(el: HTMLElement, binding: any) {
 		if (
