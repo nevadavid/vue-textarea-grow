@@ -14,14 +14,23 @@
 		"url": "https://github.com/nevadavid/vue-textarea-grow/issues"
 	},
 	"homepage": "https://github.com/nevadavid/vue-textarea-grow#readme",
+	"keywords": [
+		"typescript",
+		"vue",
+		"textarea",
+		"vue-directive",
+		"autogrow"
+	],
 	"files": [
 		"dist/**/*"
 	],
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc",
-		"vite": "vite build",
-		"serve": "vite preview"
+		"build": "vite build",
+		"prepare": "tsc",
+		"serve": "vite preview",
+		"version": "git add -A src",
+		"postversion": "git push && git push --tags"
 	},
 	"devDependencies": {
 		"typescript": "^4.3.5",
