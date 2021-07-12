@@ -3,9 +3,9 @@ function input(el: HTMLElement) {
 	el.style.height = 'auto';
 
 	const style = window.getComputedStyle(el);
-	const paddingTop = style.getPropertyValue('padding-top');
-	const paddingBottom = style.getPropertyValue('padding-bottom');
-	const height = el.scrollHeight - parseFloat(paddingTop) - parseFloat(paddingBottom);
+	const borderTop = style.getPropertyValue('border-top-width');
+	const borderBottom = style.getPropertyValue('border-bottom-width');
+	const height = el.scrollHeight + parseFloat(borderTop) + parseFloat(borderBottom);
 
 	el.style.height = height + 'px';
 }
@@ -21,6 +21,7 @@ export const grow = {
 		) {
 			el.style.overflowY = 'hidden';
 			el.style.resize = 'none';
+			el.style.boxSizing = 'border-box';
 
 			el.addEventListener(
 				'input',

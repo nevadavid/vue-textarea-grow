@@ -18,6 +18,10 @@ new Vue(
 					createElement(
 						'textarea',
 						{
+							style: {
+								padding: '10px',
+								margin: '20px',
+							},
 							directives: [
 								{
 									name: 'grow',
