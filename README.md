@@ -54,7 +54,7 @@ Vue.directive(
 
 When you need to use this directive conditionally, you can do this.
 
-So it is not necessary to add the textarea element twice, if you don't need it:
+So it is not necessary to add extra textarea element:
 
 ```html
 <template>
