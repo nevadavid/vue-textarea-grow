@@ -1,7 +1,7 @@
 {
 	"name": "vue-textarea-grow",
 	"version": "1.0.3",
-	"description": "Vue directive that handles textarea autogrow.",
+	"description": "Vue 2 directive that handles textarea autogrow.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"repository": {
@@ -29,6 +29,7 @@
 		"build": "tsc",
 		"prepare": "npm run build",
 		"serve": "vite preview",
+		"docs": "vite build",
 		"version": "git add -A src",
 		"postversion": "git push && git push --tags"
 	},
@@ -36,6 +37,7 @@
 		"typescript": "^4.3.5",
 		"vite": "^2.4.0",
 		"vite-plugin-vue2": "^1.7.2",
-		"vue": "^2.6.14"
+		"vue": "^2.6.14",
+		"vue-template-compiler": "^2.6.14"
 	}
 }

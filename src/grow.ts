@@ -11,12 +11,12 @@ function input(el: HTMLElement) {
 }
 
 /**
- * Vue directive for handling textarea autogrow (automatically adjustable height).
+ * Vue 2 directive for handling textarea autogrow (automatically adjustable height).
  */
 export const grow = {
 	bind(el: HTMLElement, binding: any) {
 		if (
-			!binding.hasOwnProperty('value')
+			!Object.prototype.hasOwnProperty.call(binding, 'value')
 			|| binding.value
 		) {
 			el.style.overflowY = 'hidden';

@@ -3,7 +3,9 @@ import { createVuePlugin } from 'vite-plugin-vue2';
 
 export default defineConfig(
 	{
-		root: 'src/examples',
+		build: {
+			outDir: 'docs',
+		},
 		plugins: [
 			createVuePlugin(),
 		],

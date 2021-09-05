@@ -1,4 +1,4 @@
-# Vue textarea autogrow
+# Vue 2 textarea autogrow
 
 Very simple Vue directive for handling textarea autogrow (automatically adjustable height).
 
